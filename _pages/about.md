@@ -1,22 +1,42 @@
 ---
 layout: about
+title: about
 permalink: /
-title: <strong>System Consultant Group</strong>
-description: <a href="https://cs.skku.edu/en">College Of Software,</a> <a href="https://skku.edu">Sungkyunkwan University</a> 
+description:
 
 profile:
-  align: bottom
-  image: main_banner1.jpg
+  align: left
+  image: Logo.jpg
 
-news: false
-social: false
+news: false  # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false  # includes social icons at the bottom of the page
+
 ---
 
-System Consultant Group is an organization affiliated to the College of Software and College of Information and Communication Engineering at SungKyunKwan University.
+## **No Overfitting Lab**
 
-We develop and manage 10+ websites that are used by our students, including the main pages of our affiliated colleges ([cs.skku.edu](https://cs.skku.edu){:target="\_blank"}, [icc.skku.ac.kr](http://icc.skku.ac.kr){:target="\_blank"}). 
+We are a group of independent researchers. We are working on the intersection of Natural Language Processing and Machine Learning and are focusing on:
 
-In addition, we manage our college's servers and computers that are used for education purposes. Checkout more information at [scg.skku.ac.kr](http://scg.skku.ac.kr){:target="\_blank"} (Korean).
+<div style = "padding-left: 250px">
+<ul>
+  <li>Interpretability of big language models,</li>
+  <li>Evaluation of NLP applications,</li>
+  <li>Detection of mental health issues from text,</li>
+  <li>Few-shot learning.</li>
+</ul>
+</div>
 
+<hr>
 
+<h3> News: </h3>
 
+<div>
+    <ul>
+        {% for post in site.posts reversed %}
+            <li>
+                <b>[{{ post.date | date: "%B %Y" }}] </b>{{ post.description }}<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">(Read more)</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
