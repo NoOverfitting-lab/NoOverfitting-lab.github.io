@@ -18,8 +18,8 @@ social: false  # includes social icons at the bottom of the page
 
 We are a group of independent researchers. We are working on the intersection of Natural Language Processing and Machine Learning and are focusing on:
 
-<div style = "padding-left: 250px">
-<ul>
+<div style = "text-align: center">
+<ul style="list-style-type:none">
   <li>Interpretability of big language models,</li>
   <li>Evaluation of NLP applications,</li>
   <li>Detection of mental health issues from text,</li>
