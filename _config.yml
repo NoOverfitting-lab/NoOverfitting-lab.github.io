@@ -51,9 +51,9 @@ blogger_url: # your blogger URL
 keybase_username: # your keybase user name
 
 contact_note: >
-    If you would like to virtually reach me via Zoom - https://caltech.zoom.us/j/84116684122
+    Please send us an email.
 
-google_analytics: UA-280783644 # out your google-analytics code
+google_analytics: UA-203336810-1 # out your google-analytics code
 
 # -----------------------------------------------------------------------------
 # Blog
@@ -68,7 +68,7 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: zqiao # put your disqus shortname
+disqus_shortname: no-overfitting # put your disqus shortname
 
 # -----------------------------------------------------------------------------
 # Collections
