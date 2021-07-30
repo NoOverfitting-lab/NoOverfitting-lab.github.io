@@ -33,9 +33,9 @@ We are a group of independent researchers. We are working on the intersection of
 
 <div>
     <ul>
-        {% for post in site.posts reversed %}
+        {% for post in site.posts %}
             <li>
-                <b>[{{ post.date | date: "%B %Y" }}] </b>{{ post.description }}<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">(Read more)</a>
+                <b>[{{ post.date | date: "%B %Y" }}] </b>{{ post.description }} <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">(Read more)</a>
             </li>
         {% endfor %}
     </ul>
