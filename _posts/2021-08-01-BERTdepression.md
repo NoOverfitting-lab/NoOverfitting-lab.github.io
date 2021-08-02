@@ -39,16 +39,25 @@ With the coronavirus pandemic setting off the worst mental health crisis of the 
 
 Naturally, our attention turned to the pre-trained transformers that have been revolutionizing the NLP industry, specifically BERT-based models. However, there have been observations about the lack of generalizability and inconsistencies in performance results. Thus, this motivated us to explore in greater detail these models' performance on depressive text. 
 
-![alt text](https://github.com/NoOverfitting-lab/NoOverfitting-lab.github.io/blob/ks_draft/assets/img/BERTdepression_pic1_v2.PNG?raw=true)
+![alt text](https://github.com/NoOverfitting-lab/NoOverfitting-lab.github.io/blob/ks_draft/assets/img/BERTdepression_pic1.PNG?raw=true)
 (Image credit: https://media-cldnry.s-nbcnews.com)
 
 ## Related Work
 
 After exploring various evaluation techniques we have picked the CheckList from (Ribeiro et al., 2020), a behavioral testing framework that follows software engineering “black box” concept. Main idea behind this evaluation methodology is to create tests that are model-, data- and task-independent and instead focus on testing certain model capabilities. CheckLists have three types of tests: Minimum Functionality tests (MFT) that are similar to unit testing, Invariance (INV) tests akin to metamorphic tests as they are focused on the relationship between input and output, and Directional Expectation (DIR) tests measure the change in the direction of prediction of a model.
 
+![alt text](https://github.com/NoOverfitting-lab/NoOverfitting-lab.github.io/blob/ks_draft/assets/img/BERTdepression_pic1_v2.PNG?raw=true)
+(Image credit: https://www.shutterstock.com)
+
 We were interested to test whether BERT-based models are able to learn depression specific language markers from text. For example, many studies show that increased usage of first-person pronouns can be a reliable indicator of the onset of depression as a person becomes self-focused in their speech (Bucci and Freedman, 1981; Rude et al., 2004; Zimmermann et al., 2013). Thus, we decided to create tests following the CheckList methodology to analyze this particular language marker. 
 
+![alt text](https://github.com/NoOverfitting-lab/NoOverfitting-lab.github.io/blob/ks_draft/assets/img/BERTdepression_pic3.PNG?raw=true)
+(Image credit: https://www.shutterstock.com)
+
 Further, (Smirnova et al., 2018) claim that cognitive depression symptoms are known to be the most expressed through language. Other researchers show that certain depression-specific somatic symptoms, such as sleep deprivation, fatigue or loss of energy, significantly affect language production (Harrison and Horne, 1998). Patient Health Questionnaire (PHQ-9), a self-administered test that is routinely used for depression severity assessment, evaluates the four cognitive symptoms, four somatic symptoms, and suicidal ideation (Kroenke et al., 2001; Kroenke and Spitzer, 2002; Arroll et al., 2010). For this reason, we used PHQ-9 to build behavioral tests that analyze BERT models’ ability to detect somatic and cognitive depression symptoms from text.
+
+![alt text](https://github.com/NoOverfitting-lab/NoOverfitting-lab.github.io/blob/ks_draft/assets/img/BERTdepression_pic4.PNG?raw=true)
+(Image credit: https://www.shutterstock.com)
 
 ## Methodology
 
