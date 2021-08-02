@@ -39,8 +39,7 @@ With the coronavirus pandemic setting off the worst mental health crisis of the 
 
 Naturally, our attention turned to the pre-trained transformers that have been revolutionizing the NLP industry, specifically BERT-based models. However, there have been observations about the lack of generalizability and inconsistencies in performance results. Thus, this motivated us to explore in greater detail these models' performance on depressive text. 
 
-![alt text](https://github.com/NoOverfitting-lab/NoOverfitting-lab.github.io/blob/ks_draft/assets/img/BERTdepression_pic1.PNG?raw=true)
-
+![alt text](https://github.com/NoOverfitting-lab/NoOverfitting-lab.github.io/blob/ks_draft/assets/img/BERTdepression_pic1_v2.PNG?raw=true)
 (Image credit: https://media-cldnry.s-nbcnews.com)
 
 ## Related Work
