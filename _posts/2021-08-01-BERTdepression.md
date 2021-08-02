@@ -77,7 +77,7 @@ The results show that the best performing RoBERTa is able to achieve the highest
 | RoBERTa           | **0.787** | **0.213** |  **0.787**  |
 
 Failure rates of all three models on the DIR tests are substantially higher than those on the INV and MFT tests indicating that the models are not capable of detecting these specifics in text with sufficient accuracy. Across DIR tests the somatic symptoms prove to be easier to detect. Suicidal ideation is the most difficult symptom of depression for the models to detect.
-
+![alt text](https://github.com/NoOverfitting-lab/NoOverfitting-lab.github.io/blob/ks_draft/assets/img/BERTdepression_Table2.PNG?raw=true)
 | Tested on       | Model             |    Acc       |   Brier      |      AUC         |
 | ----------------| ----------------- | ------------ | ------------ | ---------------- |
 |      **TWHash**         | BERT              |    **0.5660**  |    **0.4340**  |     **0.5770**      |
@@ -95,16 +95,3 @@ If we order the models according to their behavior on the DIR tests that are bas
 
 ![alt text](https://github.com/NoOverfitting-lab/NoOverfitting-lab.github.io/blob/ks_draft/assets/img/BERTdepression_Table3_v2.PNG?raw=true)
 
-
-
-| Type | Test Description               |      BERT         |      RoBERTa      |      ALBERT       |
-| -----| ------------------------------ | ----------------- | ----------------- | ----------------- |
-| INV  | swap personal pronouns         |    1.82 / 2.23    |    1.82 / 2.06    |    2.85 / 2.06    |
-| MFT  | 1st person <-> 3rd person            |    0.82 / 0.81  |    0.52 / 0.19  |     0.95 / 0.35      |
-| DIR  | presence of somatic symptoms       | 21.38 / 1.62 | 31.96 / 2.23 |   0.5349    |
-| **TWPhmDEPR**             | BERT              |    **0.5604**  |    **0.4396**  |     **0.5604**      |
-| **TWPhmDEPR** | ALBERT            |    0.5421  |    0.4579  |     0.5421     |
-| **TWPhmDEPR**             | RoBERTa           | 0.5421 | 0.4579 |   0.5421    |
-| **DAIC-WoZ**             | BERT              |    0.4671  |    0.5329  |     0.4994      |
-| **DAIC-WoZ**   | ALBERT            |    0.5062  |    0.4938  |     0.4983      |
-| **DAIC-WoZ**             | RoBERTa           | **0.5689** | **0.4311** |   **0.5301**    |
