@@ -39,6 +39,10 @@ With the coronavirus pandemic setting off the worst mental health crisis of the 
 
 Naturally, our attention turned to the pre-trained transformers that have been revolutionizing the NLP industry, specifically BERT-based models. However, there have been observations about the lack of generalizability and inconsistencies in performance results. Thus, this motivated us to explore in greater detail these models' performance on depressive text. 
 
+![alt text](https://github.com/NoOverfitting-lab/NoOverfitting-lab.github.io/blob/ks_draft/assets/img/BERTdepression_pic1.PNG?raw=true)
+
+(Image credit: https://media-cldnry.s-nbcnews.com)
+
 ## Related Work
 
 After exploring various evaluation techniques we have picked the CheckList from (Ribeiro et al., 2020), a behavioral testing framework that follows software engineering “black box” concept. Main idea behind this evaluation methodology is to create tests that are model-, data- and task-independent and instead focus on testing certain model capabilities. CheckLists have three types of tests: Minimum Functionality tests (MFT) that are similar to unit testing, Invariance (INV) tests akin to metamorphic tests as they are focused on the relationship between input and output, and Directional Expectation (DIR) tests measure the change in the direction of prediction of a model.
@@ -68,29 +72,13 @@ We were interested if standard performance metrics were fully representative of 
 ## Results 
 
 The results show that the best performing RoBERTa is able to achieve the highest classification performance based on accuracy,  Brier and AUC scores and ALBERT is the worst model (Tab.1).  This follows the order of the behavioral testing performance across MFT and INV tests (Tab. 3) and thus suggests that valuation metrics may be good in assessing capability of models in terms of its basic functionality (e.g. detecting most common and most generic depression-based language patterns), as well as models’ robustness against simple perturbations. 
+
 ![alt text](https://github.com/NoOverfitting-lab/NoOverfitting-lab.github.io/blob/ks_draft/assets/img/BERTdepression_Table1.PNG?raw=true)
 
-| Model             |    Acc    |   Brier   |     AUC     |
-| ----------------- | --------- | --------- | ----------- |
-| BERT              |    0.752  |    0.248  |    0.752    |
-| ALBERT            |    0.714  |    0.286  |    0.709    |
-| RoBERTa           | **0.787** | **0.213** |  **0.787**  |
-
 Failure rates of all three models on the DIR tests are substantially higher than those on the INV and MFT tests indicating that the models are not capable of detecting these specifics in text with sufficient accuracy. Across DIR tests the somatic symptoms prove to be easier to detect. Suicidal ideation is the most difficult symptom of depression for the models to detect.
-![alt text](https://github.com/NoOverfitting-lab/NoOverfitting-lab.github.io/blob/ks_draft/assets/img/BERTdepression_Table2.PNG?raw=true)
-| Tested on       | Model             |    Acc       |   Brier      |      AUC         |
-| ----------------| ----------------- | ------------ | ------------ | ---------------- |
-|      **TWHash**         | BERT              |    **0.5660**  |    **0.4340**  |     **0.5770**      |
-| **TWHash**   | ALBERT            |    0.5221  |    0.4779  |     0.5225      |
-|    **TWHash**           | RoBERTa           | 0.5369 | 0.4631 |   0.5349    |
-| **TWPhmDEPR**             | BERT              |    **0.5604**  |    **0.4396**  |     **0.5604**      |
-| **TWPhmDEPR** | ALBERT            |    0.5421  |    0.4579  |     0.5421     |
-| **TWPhmDEPR**             | RoBERTa           | 0.5421 | 0.4579 |   0.5421    |
-| **DAIC-WoZ**             | BERT              |    0.4671  |    0.5329  |     0.4994      |
-| **DAIC-WoZ**   | ALBERT            |    0.5062  |    0.4938  |     0.4983      |
-| **DAIC-WoZ**             | RoBERTa           | **0.5689** | **0.4311** |   **0.5301**    |
 
-                                     
+![alt text](https://github.com/NoOverfitting-lab/NoOverfitting-lab.github.io/blob/ks_draft/assets/img/BERTdepression_Table2.PNG?raw=true)
+                                    
 If we order the models according to their behavior on the DIR tests that are based on the presence of depression symptoms, BERT is the best performer with RoBERTa coming next and ALBERT being the worst (Tab. 3). Interestingly, model performance in OOD settings of small/medium distance follows this same ordering, with BERT achieving the greatest performance and ALBERT achieving  the worst (Tab. 2).
 
 ![alt text](https://github.com/NoOverfitting-lab/NoOverfitting-lab.github.io/blob/ks_draft/assets/img/BERTdepression_Table3_v2.PNG?raw=true)
