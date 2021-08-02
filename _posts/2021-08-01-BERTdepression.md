@@ -46,7 +46,9 @@ Naturally, our attention turned to the pre-trained transformers that have been r
 
 After exploring various evaluation techniques we have picked the CheckList from (Ribeiro et al., 2020), a behavioral testing framework that follows software engineering “black box” concept. Main idea behind this evaluation methodology is to create tests that are model-, data- and task-independent and instead focus on testing certain model capabilities. CheckLists have three types of tests: Minimum Functionality tests (MFT) that are similar to unit testing, Invariance (INV) tests akin to metamorphic tests as they are focused on the relationship between input and output, and Directional Expectation (DIR) tests measure the change in the direction of prediction of a model.
 
-https://www.shutterstock.com/image-illustration/black-box-levitation-on-background-3d-489987685
+<img src="https://www.shutterstock.com/image-illustration/black-box-levitation-on-background-3d-489987685" alt="img" width="80%" />
+
+(Image credit: www.shutterstock.com)
 
 We were interested to test whether BERT-based models are able to learn depression specific language markers from text. For example, many studies show that increased usage of first-person pronouns can be a reliable indicator of the onset of depression as a person becomes self-focused in their speech (Bucci and Freedman, 1981; Rude et al., 2004; Zimmermann et al., 2013). Thus, we decided to create tests following the CheckList methodology to analyze this particular language marker. 
 
