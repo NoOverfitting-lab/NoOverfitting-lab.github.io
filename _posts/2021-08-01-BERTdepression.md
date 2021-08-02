@@ -44,7 +44,7 @@ Naturally, our attention turned to the pre-trained transformers that have been r
 
 ## Related Work
 
-After exploring various evaluation techniques we have picked the CheckList from (Ribeiro et al., 2020), a behavioral testing framework that follows software engineering “black box” concept. Main idea behind this evaluation methodology is to create tests that are model-, data- and task-independent and instead focus on testing certain model capabilities. CheckLists have three types of tests: Minimum Functionality tests (MFT) that are similar to unit testing, Invariance (INV) tests akin to metamorphic tests as they are focused on the relationship between input and output, and Directional Expectation (DIR) tests measure the change in the direction of prediction of a model.
+After exploring various evaluation techniques we have picked the CheckList from (Ribeiro et al., 2020)<d-cite key="ribeiro-etal-2020-beyond"></d-cite>, a behavioral testing framework that follows software engineering “black box” concept. Main idea behind this evaluation methodology is to create tests that are model-, data- and task-independent and instead focus on testing certain model capabilities. CheckLists have three types of tests: Minimum Functionality tests (MFT) that are similar to unit testing, Invariance (INV) tests akin to metamorphic tests as they are focused on the relationship between input and output, and Directional Expectation (DIR) tests measure the change in the direction of prediction of a model.
 
 ![alt text](https://github.com/NoOverfitting-lab/NoOverfitting-lab.github.io/blob/ks_draft/assets/img/BERTdepression_pic1_v2.PNG?raw=true)
 (Image credit: https://www.shutterstock.com)
