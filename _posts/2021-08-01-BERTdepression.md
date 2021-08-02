@@ -70,25 +70,37 @@ We were interested if standard performance metrics were fully representative of 
 The results show that the best performing RoBERTa is able to achieve the highest classification performance based on accuracy,  Brier and AUC scores and ALBERT is the worst model (Tab.1).  This follows the order of the behavioral testing performance across MFT and INV tests (Tab. 3) and thus suggests that valuation metrics may be good in assessing capability of models in terms of its basic functionality (e.g. detecting most common and most generic depression-based language patterns), as well as models’ robustness against simple perturbations. 
 
 
-| Model             |    Acc    |   Brier   |      AUC       |
-| ----------------- | --------- | --------- | -------------- |
-| BERT              |    0.752  |    0.248  |     0.752      |
-| ALBERT            |    0.714  |    0.286  |     0.709      |
-| RoBERTa           | **0.787** | **0.213** |   **0.787**    |
+| Model             |    Acc    |   Brier   |     AUC     |
+| ----------------- | --------- | --------- | ----------- |
+| BERT              |    0.752  |    0.248  |    0.752    |
+| ALBERT            |    0.714  |    0.286  |    0.709    |
+| RoBERTa           | **0.787** | **0.213** |  **0.787**  |
 
 Failure rates of all three models on the DIR tests are substantially higher than those on the INV and MFT tests indicating that the models are not capable of detecting these specifics in text with sufficient accuracy. Across DIR tests the somatic symptoms prove to be easier to detect. Suicidal ideation is the most difficult symptom of depression for the models to detect.
 
 | Tested on    | Model             |    Acc    |   Brier   |      AUC       |
 | -------------| ----------------- | --------- | --------- | -------------- |
-|              | BERT              |    **0.5660**  |    **0.4340**  |     **0.5770**      |
+|      **TWHash**         | BERT              |    **0.5660**  |    **0.4340**  |     **0.5770**      |
 | **TWHash**   | ALBERT            |    0.5221  |    0.4779  |     0.5225      |
-|              | RoBERTa           | 0.5369 | 0.4631 |   0.5349    |
-|              | BERT              |    **0.5604**  |    **0.4396**  |     **0.5604**      |
+|    **TWHash**           | RoBERTa           | 0.5369 | 0.4631 |   0.5349    |
+| **TWPhmDEPR**             | BERT              |    **0.5604**  |    **0.4396**  |     **0.5604**      |
 | **TWPhmDEPR** | ALBERT            |    0.5421  |    0.4579  |     0.5421     |
-|              | RoBERTa           | 0.5421 | 0.4579 |   0.5421    |
-|              | BERT              |    0.4671  |    0.5329  |     0.4994      |
+| **TWPhmDEPR**             | RoBERTa           | 0.5421 | 0.4579 |   0.5421    |
+| **DAIC-WoZ**             | BERT              |    0.4671  |    0.5329  |     0.4994      |
 | **DAIC-WoZ**   | ALBERT            |    0.5062  |    0.4938  |     0.4983      |
-|              | RoBERTa           | **0.5689** | **0.4311** |   **0.5301**    |
+| **DAIC-WoZ**             | RoBERTa           | **0.5689** | **0.4311** |   **0.5301**    |
 
                                      
 If we order the models according to their behavior on the DIR tests that are based on the presence of depression symptoms, BERT is the best performer with RoBERTa coming next and ALBERT being the worst (Tab. 3). Interestingly, model performance in OOD settings of small/medium distance follows this same ordering, with BERT achieving the greatest performance and ALBERT achieving  the worst (Tab. 2).
+
+| Type   | Test Description            |    BERT      |   RoBERTa   |    ALBERT      |
+| -------| --------------------------- | ------------ | ----------- | -------------- |
+| INV    | swap personal pronouns      |  1.82 / 2.23 | 1.82 / 2.06 |  2.85 / 2.06   |
+| **TWHash**   | ALBERT            |    0.5221  |    0.4779  |     0.5225      |
+|    **TWHash**           | RoBERTa           | 0.5369 | 0.4631 |   0.5349    |
+| **TWPhmDEPR**             | BERT              |    **0.5604**  |    **0.4396**  |     **0.5604**      |
+| **TWPhmDEPR** | ALBERT            |    0.5421  |    0.4579  |     0.5421     |
+| **TWPhmDEPR**             | RoBERTa           | 0.5421 | 0.4579 |   0.5421    |
+| **DAIC-WoZ**             | BERT              |    0.4671  |    0.5329  |     0.4994      |
+| **DAIC-WoZ**   | ALBERT            |    0.5062  |    0.4938  |     0.4983      |
+| **DAIC-WoZ**             | RoBERTa           | **0.5689** | **0.4311** |   **0.5301**    |
