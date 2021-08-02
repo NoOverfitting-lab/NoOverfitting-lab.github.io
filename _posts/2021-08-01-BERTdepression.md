@@ -68,7 +68,7 @@ We were interested if standard performance metrics were fully representative of 
 ## Results 
 
 The results show that the best performing RoBERTa is able to achieve the highest classification performance based on accuracy,  Brier and AUC scores and ALBERT is the worst model (Tab.1).  This follows the order of the behavioral testing performance across MFT and INV tests (Tab. 3) and thus suggests that valuation metrics may be good in assessing capability of models in terms of its basic functionality (e.g. detecting most common and most generic depression-based language patterns), as well as models’ robustness against simple perturbations. 
-
+![alt text](https://github.com/NoOverfitting-lab/NoOverfitting-lab.github.io/blob/ks_draft/assets/img/BERTdepression_Table1.PNG?raw=true)
 
 | Model             |    Acc    |   Brier   |     AUC     |
 | ----------------- | --------- | --------- | ----------- |
