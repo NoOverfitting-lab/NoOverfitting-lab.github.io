@@ -81,14 +81,14 @@ Failure rates of all three models on the DIR tests are substantially higher than
 | Tested on    | Model             |    Acc    |   Brier   |      AUC       |
 | -------------| ----------------- | --------- | --------- | -------------- |
 |              | BERT              |    **0.5660**  |    **0.4340**  |     **0.5770**      |
-| **TWHash**   | ALBERT            |    0.714  |    0.286  |     0.709      |
-|              | RoBERTa           | 0.787 | **0.213** |   **0.787**    |
-|              | BERT              |    0.752  |    0.248  |     0.752      |
-| **TWPhmDEPR** | ALBERT            |    0.714  |    0.286  |     0.709      |
-|              | RoBERTa           | **0.787** | **0.213** |   **0.787**    |
-|              | BERT              |    0.752  |    0.248  |     0.752      |
-| **DAIC-WoZ**   | ALBERT            |    0.714  |    0.286  |     0.709      |
-|              | RoBERTa           | **0.787** | **0.213** |   **0.787**    |
+| **TWHash**   | ALBERT            |    0.5221  |    0.4779  |     0.5225      |
+|              | RoBERTa           | 0.5369 | 0.4631 |   0.5349    |
+|              | BERT              |    **0.5604**  |    **0.4396**  |     **0.5604**      |
+| **TWPhmDEPR** | ALBERT            |    0.5421  |    0.4579  |     0.5421     |
+|              | RoBERTa           | 0.5421 | 0.4579 |   0.5421    |
+|              | BERT              |    0.4671  |    0.5329  |     0.4994      |
+| **DAIC-WoZ**   | ALBERT            |    0.5062  |    0.4938  |     0.4983      |
+|              | RoBERTa           | **0.5689** | **0.4311** |   **0.5301**    |
 
                                      
 If we order the models according to their behavior on the DIR tests that are based on the presence of depression symptoms, BERT is the best performer with RoBERTa coming next and ALBERT being the worst (Tab. 3). Interestingly, model performance in OOD settings of small/medium distance follows this same ordering, with BERT achieving the greatest performance and ALBERT achieving  the worst (Tab. 2).
