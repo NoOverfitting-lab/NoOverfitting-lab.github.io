@@ -80,9 +80,9 @@ Failure rates of all three models on the DIR tests are substantially higher than
 
 | Tested on    | Model             |    Acc    |   Brier   |      AUC       |
 | -------------| ----------------- | --------- | --------- | -------------- |
-|              | BERT              |    0.752  |    0.248  |     0.752      |
+|              | BERT              |    **0.5660**  |    **0.4340**  |     **0.5770**      |
 | **TWHash**   | ALBERT            |    0.714  |    0.286  |     0.709      |
-|              | RoBERTa           | **0.787** | **0.213** |   **0.787**    |
+|              | RoBERTa           | 0.787 | **0.213** |   **0.787**    |
 |              | BERT              |    0.752  |    0.248  |     0.752      |
 | **TWPhmDEPR** | ALBERT            |    0.714  |    0.286  |     0.709      |
 |              | RoBERTa           | **0.787** | **0.213** |   **0.787**    |
