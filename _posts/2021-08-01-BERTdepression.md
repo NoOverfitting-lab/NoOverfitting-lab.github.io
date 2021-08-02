@@ -96,8 +96,8 @@ If we order the models according to their behavior on the DIR tests that are bas
 | Type | Test Description               |      BERT         |      RoBERTa      |      ALBERT       |
 | -----| ------------------------------ | ----------------- | ----------------- | ----------------- |
 | INV  | swap personal pronouns         |    1.82 / 2.23    |    1.82 / 2.06    |    2.85 / 2.06    |
-| **TWHash**   | ALBERT            |    0.5221  |    0.4779  |     0.5225      |
-|    **TWHash**           | RoBERTa           | 0.5369 | 0.4631 |   0.5349    |
+| MFT  | 1st person <-> 3rd person            |    0.82 / 0.81  |    0.52 / 0.19  |     0.95 / 0.35      |
+| DIR  | presence of somatic symptoms       | 21.38 / 1.62 | 31.96 / 2.23 |   0.5349    |
 | **TWPhmDEPR**             | BERT              |    **0.5604**  |    **0.4396**  |     **0.5604**      |
 | **TWPhmDEPR** | ALBERT            |    0.5421  |    0.4579  |     0.5421     |
 | **TWPhmDEPR**             | RoBERTa           | 0.5421 | 0.4579 |   0.5421    |
