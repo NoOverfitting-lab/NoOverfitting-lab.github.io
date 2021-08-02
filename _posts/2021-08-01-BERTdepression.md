@@ -77,5 +77,20 @@ The results show that the best performing RoBERTa is able to achieve the highest
 | RoBERTa           | **0.787** | **0.213** |   **0.787**    |
 
 Failure rates of all three models on the DIR tests are substantially higher than those on the INV and MFT tests indicating that the models are not capable of detecting these specifics in text with sufficient accuracy. Across DIR tests the somatic symptoms prove to be easier to detect. Suicidal ideation is the most difficult symptom of depression for the models to detect.
+
+| Tested on    | Model             |    Acc    |   Brier   |      AUC       |
+| -------------| ----------------- | --------- | --------- | -------------- |
+|              | BERT              |    0.752  |    0.248  |     0.752      |
+| **TWHash**   | ALBERT            |    0.714  |    0.286  |     0.709      |
+|              | RoBERTa           | **0.787** | **0.213** |   **0.787**    |
+| -------------| ----------------- | --------- | --------- | -------------- |
+|              | BERT              |    0.752  |    0.248  |     0.752      |
+| **TWPhmDEPR** | ALBERT            |    0.714  |    0.286  |     0.709      |
+|              | RoBERTa           | **0.787** | **0.213** |   **0.787**    |
+| -------------| ----------------- | --------- | --------- | -------------- |
+|              | BERT              |    0.752  |    0.248  |     0.752      |
+| **DAIC-WoZ**   | ALBERT            |    0.714  |    0.286  |     0.709      |
+|              | RoBERTa           | **0.787** | **0.213** |   **0.787**    |
+
                                      
 If we order the models according to their behavior on the DIR tests that are based on the presence of depression symptoms, BERT is the best performer with RoBERTa coming next and ALBERT being the worst (Tab. 3). Interestingly, model performance in OOD settings of small/medium distance follows this same ordering, with BERT achieving the greatest performance and ALBERT achieving  the worst (Tab. 2).
