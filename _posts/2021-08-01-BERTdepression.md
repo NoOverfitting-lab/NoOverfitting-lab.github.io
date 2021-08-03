@@ -39,7 +39,7 @@ With the coronavirus pandemic setting off the worst mental health crisis of the 
 
 Naturally, our attention turned to the pre-trained transformers that have been revolutionizing the NLP industry, specifically BERT-based models. However, there have been observations about the lack of generalizability and inconsistencies in performance results. Thus, this motivated us to explore in greater detail these models' performance on depressive text. 
 
-<img src="/assets/img/BERTdepression_pic1.PNG" width="90%" />
+<img src="/assets/img/BERTdepression_pic1.PNG" width="70%" />
 
 (Image credit: https://media-cldnry.s-nbcnews.com)
 
@@ -48,17 +48,17 @@ Naturally, our attention turned to the pre-trained transformers that have been r
 After exploring various evaluation techniques we have picked the CheckList from <d-cite key="ribeiro-etal-2020-beyond"></d-cite>, a behavioral testing framework that follows software engineering “black box” concept. Main idea behind this evaluation methodology is to create tests that are model-, data- and task-independent and instead focus on testing certain model capabilities. CheckLists have three types of tests: Minimum Functionality tests (MFT) that are similar to unit testing, Invariance (INV) tests akin to metamorphic tests as they are focused on the relationship between input and output, and Directional Expectation (DIR) tests measure the change in the direction of prediction of a model.
 
 
-<img src="/assets/img/BERTdepression_pic2.PNG" width="60%" />
+<img src="/assets/img/BERTdepression_pic2.PNG" width="30%" />
 (Image credit: https://www.shutterstock.com)
 
 We were interested to test whether BERT-based models are able to learn depression specific language markers from text. For example, many studies show that increased usage of first-person pronouns can be a reliable indicator of the onset of depression as a person becomes self-focused in their speech <d-cite key="bucci1981language"></d-cite> <d-cite key="rude2004language"></d-cite> <d-cite key="zimmermann2013way"></d-cite>. Thus, we decided to create tests following the CheckList methodology to analyze this particular language marker. 
 
-<img src="/assets/img/BERTdepression_pic3.PNG" width="60%" />
+<img src="/assets/img/BERTdepression_pic3.PNG" width="50%" />
 (Image credit: https://www.shutterstock.com)
 
 Further, <d-cite key="smirnova2018language"></d-cite> claim that cognitive depression symptoms are known to be the most expressed through language. Other researchers show that certain depression-specific somatic symptoms, such as sleep deprivation, fatigue or loss of energy, significantly affect language production <d-cite key="harrison1998sleep"></d-cite>. Patient Health Questionnaire (PHQ-9), a self-administered test that is routinely used for depression severity assessment, evaluates the four cognitive symptoms, four somatic symptoms, and suicidal ideation <d-cite key="kroenke2001phq"></d-cite> <d-cite key="kroenke2002phq"></d-cite> <d-cite key="arroll2010validation"></d-cite>. For this reason, we used PHQ-9 to build behavioral tests that analyze BERT models’ ability to detect somatic and cognitive depression symptoms from text.
 
-<img src="/assets/img/BERTdepression_pic4.PNG" width="70%" />
+<img src="/assets/img/BERTdepression_pic4.PNG" width="60%" />
 (Image credit: https://www.shutterstock.com)
 
 ## Methodology
