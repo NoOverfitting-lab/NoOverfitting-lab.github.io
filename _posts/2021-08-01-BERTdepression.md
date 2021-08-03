@@ -93,3 +93,5 @@ If we order the models according to their behavior on the DIR tests that are bas
 
 <img src="/assets/img/BERTdepression_Table3_v3.PNG" width="40%" />
 
+RoBERTA’s higher performance suggests that  longer training and incorporating more context into the training process can potentially improve model’ capability to recognize the absence of depressive symptoms. A potential way to improve model performance on the DIR tests of type a could be adding symptom-related information to training data before fine-tuning models. However, these results and thus suggestions could only be considered as a preliminary investigation and motivation for future research.
+
