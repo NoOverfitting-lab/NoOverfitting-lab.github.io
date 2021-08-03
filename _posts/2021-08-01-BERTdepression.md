@@ -83,14 +83,13 @@ We were interested if standard performance metrics were fully representative of 
 
 The results show that the best performing RoBERTa is able to achieve the highest classification performance based on accuracy,  Brier and AUC scores and ALBERT is the worst model (Tab.1).  This follows the order of the behavioral testing performance across MFT and INV tests (Tab. 3) and thus suggests that valuation metrics may be good in assessing capability of models in terms of its basic functionality (e.g. detecting most common and most generic depression-based language patterns), as well as models’ robustness against simple perturbations. 
 
-![alt text](https://github.com/NoOverfitting-lab/NoOverfitting-lab.github.io/blob/ks_draft/assets/img/BERTdepression_Table1.PNG?raw=true)
-<img src="/assets/img/BERTdepression_Table1_v2.PNG" width="50%" />
+<img src="/assets/img/BERTdepression_Table1_v2.PNG" width="20%" />
 
 Failure rates of all three models on the DIR tests are substantially higher than those on the INV and MFT tests indicating that the models are not capable of detecting these specifics in text with sufficient accuracy. Across DIR tests the somatic symptoms prove to be easier to detect. Suicidal ideation is the most difficult symptom of depression for the models to detect.
 
-<img src="/assets/img/BERTdepression_Table2_v2.PNG" width="50%" />
+<img src="/assets/img/BERTdepression_Table2_v2.PNG" width="30%" />
                                     
 If we order the models according to their behavior on the DIR tests that are based on the presence of depression symptoms, BERT is the best performer with RoBERTa coming next and ALBERT being the worst (Tab. 3). Interestingly, model performance in OOD settings of small/medium distance follows this same ordering, with BERT achieving the greatest performance and ALBERT achieving  the worst (Tab. 2).
 
-<img src="/assets/img/BERTdepression_Table3_v3.PNG" width="50%" />
+<img src="/assets/img/BERTdepression_Table3_v3.PNG" width="30%" />
 
