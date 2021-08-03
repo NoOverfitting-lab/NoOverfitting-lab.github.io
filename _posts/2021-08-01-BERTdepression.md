@@ -39,7 +39,7 @@ With the coronavirus pandemic setting off the worst mental health crisis of the 
 
 Naturally, our attention turned to the pre-trained transformers that have been revolutionizing the NLP industry, specifically BERT-based models. However, there have been observations about the lack of generalizability and inconsistencies in performance results. Thus, this motivated us to explore in greater detail these models' performance on depressive text. 
 
-![alt text](https://github.com/NoOverfitting-lab/NoOverfitting-lab.github.io/blob/ks_draft/assets/img/BERTdepression_pic1.PNG?raw=true)
+src="/assets/img/BERTdepression_pic1.PNG" alt="alt text" width="90%" />
 (Image credit: https://media-cldnry.s-nbcnews.com)
 
 ## Related Work
@@ -72,7 +72,7 @@ For DIR tests we created two tests for eight out of PHQ-9 symptoms, one test for
 
 We tested three sets of classifiers fine-tuned from three different, pre-trained BERT variants: BERT, RoBERTa, and ALBERT, downloaded from Huggingface. 
 
-We trained these models on a balanced dataset of 23,454 tweets, TWSELFDIAG,  that we created from <d-cite key="shen2017depression"></d-cite>, a self-reported collection of tweets from 2009 to 2019 where users were labeled as depressed if they tweeted “(I’m/ I was/ I am/ I’ve 281 been) diagnosed depression”. We used three additional datasets to test models in Out-Of-Distribution (OOD) settings. Two of them being Twitter-based with self-reporting and others-reporting class labeling. Another is the dataset DAIC-WoZ, clinical interviews from the Distress Analysis Interviews Corpus <d-cite key="gratch2014distress"></d-cite>.
+We trained these models on a balanced dataset of 23,454 tweets, TWSELFDIAG,  that we created from <d-cite key="shen2017depression"></d-cite>, a self-reported collection of tweets from 2009 to 2019 where users were labeled as depressed if they tweeted “(I’m/ I was/ I am/ I’ve been) diagnosed depression”. We used three additional datasets to test models in Out-Of-Distribution (OOD) settings. Two of them being Twitter-based with self-reporting and others-reporting class labeling. Another is the dataset DAIC-WoZ, clinical interviews from the Distress Analysis Interviews Corpus <d-cite key="gratch2014distress"></d-cite>.
 
 We were interested if standard performance metrics were fully representative of the capabilities and limitations of BERT-based models in recognizing signs of depression from text. As such, we first performed In-Distribution (ID, same distribution as training data) classification experiments by training each of three models on the training subset of TWSELFDIAG and testing them on the test subset of the same TWSELFDIAG dataset. We selected the best performing model for BERT, RoBERTa and ALBERT based on the standard evaluation metrics of Accuracy, AUC and Brier score, for use in further experiments. Next, we wanted to see the generalizability of these models by testing them on OOD, the three datasets mentioned above. Finally, we assessed models performance on our depression behavioral tests and compared the results with standard performance metrics and OOD results. 
                                          
