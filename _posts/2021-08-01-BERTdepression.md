@@ -11,7 +11,7 @@ authors:
       name: No Overfitting Lab
 
 
-bibliography: 2021-07-23-bigbench.bib
+bibliography: 2021-08-01-BERTdepression.bib
 
 # Below is an example of injecting additional post-specific styles.
 # If you use this post as a template, delete this _styles block.
@@ -92,6 +92,8 @@ Failure rates of all three models on the DIR tests are substantially higher than
 If we order the models according to their behavior on the DIR tests that are based on the presence of depression symptoms, BERT is the best performer with RoBERTa coming next and ALBERT being the worst (Tab. 3). Interestingly, model performance in OOD settings of small/medium distance follows this same ordering, with BERT achieving the greatest performance and ALBERT achieving  the worst (Tab. 2).
 
 <img src="/assets/img/BERTdepression_Table3_v3.PNG" width="40%" />
+
+## Takeaways
 
 RoBERTA’s higher performance suggests that  longer training and incorporating more context into the training process can potentially improve model’ capability to recognize the absence of depressive symptoms. A potential way to improve model performance on the DIR tests of type a could be adding symptom-related information to training data before fine-tuning models. However, these results and thus suggestions could only be considered as a preliminary investigation and motivation for future research.
 
